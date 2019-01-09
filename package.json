@@ -1,0 +1,49 @@
+{
+  "name": "think-image-view",
+  "version": "1.0.0",
+  "description": "thinkjs image view middleware",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint index.js && nyc ava test/index.js && nyc report --reporter=html"
+  },
+  "keywords": [
+    "thinkjs",
+    "middleware",
+    "image-view"
+  ],
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "author": "lileltp <lileltp@163.com>",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "images": "^3.0.1",
+    "debug": "^2.6.3",
+    "koa-send": "3.3.0",
+    "think-helper": "latest"
+  },
+  "devDependencies": {
+    "ava": "^0.19.1",
+    "babel-eslint": "^7.2.1",
+    "babel-preset-think-node": "^1.0.1",
+    "coveralls": "^2.13.0",
+    "eslint": "^3.19.0",
+    "eslint-config-think": "^1.0.1",
+    "koa": "^2.2.0",
+    "nyc": "^10.2.0",
+    "supertest": "^3.0.0",
+    "think-helper": "latest"
+  },
+  "ava": {
+    "require": [
+      "babel-core/register"
+    ],
+    "babel": "inherit"
+  },
+  "babel": {
+    "presets": [
+      "think-node"
+    ]
+  }
+}
